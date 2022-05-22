@@ -1,0 +1,235 @@
+// html {
+// }
+
+body {
+  font-family: futura-pt;
+}
+
+#interest-form {
+  box-shadow: -1px 11px 20px -1px rgba(0, 0, 0, 0.72);
+  a {
+    height: 4rem;
+    background-color: #efdabc;
+    // background-color: #ffffed;
+    border-radius: 0;
+    border: none;
+    i {
+      color: black;
+    }
+    #rush {
+      font-family: futura-pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.6em !important;
+      line-height: 0.7em;
+      padding: 10px;
+      color: black;
+    }
+  }
+  a:hover {
+    background-color: #000;
+    i,
+    #rush {
+      color: #efdabc;
+    }
+  }
+}
+
+.navbar {
+  .nav-link {
+    color: #fff !important;
+    font-family: futura-pt;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .nav-link:hover {
+    color: #efdabc !important;
+  }
+}
+
+#showcase {
+  // background: url("../images/Lambda Photos/Full Group/nova-parking.JPG") bottom center / cover no-repeat;
+  // background-attachment: fixed;
+  min-height: 750px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    background-image: url("https://res.cloudinary.com/okstate-lambdas/image/upload/v1642630802/Rush%20Spring%2022%20Website/rushspring22_a4bsrk.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+  }
+  // #overlay{
+  //     background: rgba(0, 0, 0, 0.089);
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     z-index: 1;
+  // }
+  .bg-dark {
+    background-color: #000000 !important;
+  }
+  // #shirt-ad-img {
+  //   width: 15%;
+  //   margin-left: 1.5em;
+  //   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.23);
+  //   margin-bottom: 30px;
+  // }
+  // #shirt-ad-text {
+  //   margin-left: 0.5em;
+  //   h2 {
+  //     color: #fff;
+  //     font-family: futura-pt;
+  //     font-size: 24px;
+  //   }
+  //   a {
+  //     background-color: rgba(255, 255, 255, 0.247);
+  //     border-color: #fff;
+  //     border-radius: 0;
+  //     padding: 0.2em 0.4em;
+  //     transition: all 0.5s ease-out;
+  //   }
+  //   a:hover {
+  //     transform: scale(1.03);
+  //   }
+  //   a:active {
+  //     transform: scale(0.95);
+  //   }
+  // }
+}
+
+#rush-vid {
+  margin: 0 !important;
+  .container-fluid {
+    padding: 0 !important;
+  }
+}
+
+#tour {
+  // background-color: #fddd5c;
+  background-color: #8ed3f3;
+  // background-color: #ff6961;
+  padding: 50px 12px 30px;
+  width: 100%;
+
+  h2 {
+    color: #171a01;
+    font-family: futura-pt;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+  }
+  // .container {
+  //   width: 70em;
+  // }
+  .date {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+  }
+  .actual-date,
+  .upcoming-date {
+    font-weight: 800;
+  }
+  .upcoming-date {
+    font-size: 14px;
+  }
+  .upcoming-date-col {
+    padding: 0;
+  }
+  .tour-name {
+    font-weight: 600;
+  }
+  .ticket {
+    font-family: futura-pt;
+    margin-left: 10px;
+    font-weight: bold;
+    border-radius: 0;
+  }
+}
+
+#footer {
+  // background-color: #212529;
+  background-color: #000;
+  p {
+    font-size: 0.8em;
+    span {
+      a {
+        color: #cecece;
+      }
+      a:active {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+        // color: #4169e1;
+        color: #efdabc;
+        transition: all 0.2s;
+      }
+    }
+  }
+  #social {
+    a:hover {
+      text-decoration: none;
+    }
+    i {
+      color: #cecece !important;
+      font-size: 1.2em;
+    }
+    i:hover {
+      color: #efdabc !important;
+      transition: color 0.2s;
+    }
+  }
+}
+
+@media (max-width: 832px) {
+  #showcase {
+    min-height: 500px;
+  }
+}
+@media (max-width: 720px) {
+  .row-hero {
+    height: 35rem !important;
+  }
+}
+@media (max-width: 576px) {
+  #footer {
+    p {
+      justify-content: center;
+    }
+    .social {
+      justify-content: center !important;
+      span {
+        justify-content: center !important;
+        align-items: center;
+        align-self: center;
+      }
+    }
+    .contact {
+      align-items: center !important;
+    }
+  }
+  #landing-showcase {
+    .image-container {
+      img {
+        width: 30vh;
+      }
+    }
+    .quotes {
+      font-size: 1em;
+    }
+  }
+  .row-hero {
+    height: 25rem !important;
+  }
+}
