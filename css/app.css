@@ -317,7 +317,7 @@ body {
     margin: auto;
     overflow: hidden; }
     #chapter-roster .content .content-overlay {
-      background: rgba(0, 37, 146, 0.233);
+      background: rgba(0, 37, 146, 0.342);
       border-radius: 1em;
       position: absolute;
       height: 100%;
@@ -8335,5 +8335,3 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-
-/*# sourceMappingURL=app.css.map */
